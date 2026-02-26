@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="mk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoPatrol — Почетна</title>
+  <meta name="description" content="EcoPatrol — пријави еколошки проблеми, информирај се со еко вести и следи еко датуми." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS animations (optional but nice) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="EcoPatrol почетна">
+        <span class="brand-mark">🌿</span>
+        <span class="brand-text">Eco<span>Patrol</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Отвори мени" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" data-nav>
+        <a href="index.html" class="active">Почетна</a>
+        <a href="report.html">Пријави</a>
+        <a href="news.html">Вести</a>
+        <a href="#calendar" class="nav-pill">Календар</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Позадина со природа"></div>
+    <div class="container hero-inner">
+      <div class="hero-card" data-aos="fade-up">
+        <h1>Пријави проблем. <span class="accent">Заштити ја природата.</span></h1>
+        <p>
+          EcoPatrol е ученичка платформа за пријавување еколошки проблеми,
+          еко вести и еко датуми — брзо, едноставно и локално.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="report.html">Пријави проблем</a>
+          <a class="btn btn-ghost" href="#categories">Брзи категории</a>
+        </div>
+
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="150">
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">страници</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">бекенд</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">GitHub Pages</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#categories" aria-label="Скролни надолу">⌄</a>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2>Брза пријава по категорија</h2>
+        <p>Кликни на категорија за брза пријава (popup форма) или оди на целосната страна „Пријави“.</p>
+      </div>
+
+      <div class="grid cards">
+        <button class="card card-btn" type="button" data-aos="fade-up" data-report-type="Ѓубре / Дива депонија">
+          <div class="card-icon">🗑️</div>
+          <div class="card-title">Ѓубре / Дива депонија</div>
+          <div class="card-sub">Пластика, отпад, диви депонии</div>
+        </button>
+
+        <button class="card card-btn" type="button" data-aos="fade-up" data-aos-delay="50" data-report-type="Загадена вода">
+          <div class="card-icon">💧</div>
+          <div class="card-title">Загадена вода</div>
+          <div class="card-sub">Реки, канали, истекување</div>
+        </button>
+
+        <button class="card card-btn" type="button" data-aos="fade-up" data-aos-delay="100" data-report-type="Загаден воздух">
+          <div class="card-icon">🌫️</div>
+          <div class="card-title">Загаден воздух</div>
+          <div class="card-sub">Дим, прашина, непријатни мириси</div>
+        </button>
+
+        <button class="card card-btn" type="button" data-aos="fade-up" data-aos-delay="150" data-report-type="Пожар / Палење отпад">
+          <div class="card-icon">🔥</div>
+          <div class="card-title">Пожар / Палење отпад</div>
+          <div class="card-sub">Опасно горење и чад</div>
+        </button>
+
+        <button class="card card-btn" type="button" data-aos="fade-up" data-aos-delay="200" data-report-type="Сеча / Уништување зеленила">
+          <div class="card-icon">🌳</div>
+          <div class="card-title">Сеча / Зеленила</div>
+          <div class="card-sub">Нелегална сеча, уништување парк</div>
+        </button>
+
+        <button class="card card-btn" type="button" data-aos="fade-up" data-aos-delay="250" data-report-type="Загрозени животни">
+          <div class="card-icon">🐾</div>
+          <div class="card-title">Загрозени животни</div>
+          <div class="card-sub">Повредени, заробени, ризик</div>
+        </button>
+      </div>
+
+      <div class="center-actions" data-aos="fade-up">
+        <a class="btn btn-primary" href="report.html">Оди на целосна пријава</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="two-col">
+        <div data-aos="fade-up">
+          <h2>Што е EcoPatrol?</h2>
+          <p>
+            EcoPatrol е ученички проект што ги поврзува граѓаните со идејата за почиста околина.
+            Наместо само да зборуваме за проблемите — ги пријавуваме, ги следиме и учиме како да помогнеме.
+          </p>
+          <ul class="checklist">
+            <li>Брза пријава со форма</li>
+            <li>Еко вести и совети</li>
+            <li>Еко календар со важни датуми</li>
+          </ul>
+        </div>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+          <h3>Цел</h3>
+          <p>Да се креира едноставна платформа што поттикнува еко свест и локална акција.</p>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <div class="mini-ico">⚡</div>
+              <div class="mini-txt">Едноставно</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-ico">📍</div>
+              <div class="mini-txt">Локално</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-ico">🤝</div>
+              <div class="mini-txt">Заедница</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER -->
+  <section class="section" id="volunteer">
+    <div class="container">
+      <div class="volunteer" data-aos="fade-up">
+        <div>
+          <h2>Волонтирај</h2>
+          <p>Остави email и ќе те контактираме за акции за чистење, садење дрвја и еко иницијативи.</p>
+        </div>
+
+        <form class="volunteer-form" data-volunteer-form>
+          <label class="sr-only" for="volEmail">Email</label>
+          <input id="volEmail" name="email" type="email" placeholder="пример@mail.com" autocomplete="email" required />
+          <button class="btn btn-primary" type="submit">Пријави се</button>
+        </form>
+
+        <div class="toast" role="status" aria-live="polite" data-toast></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS PREVIEW -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2>Еко вести (преглед)</h2>
+        <p>Три кратки вести — за целосно читање отвори ја страната „Вести“.</p>
+      </div>
+
+      <div class="grid news-grid">
+        <article class="news-card" data-aos="fade-up">
+          <img src="assets/img/news1.jpg" alt="Еко акција" loading="lazy">
+          <div class="news-body">
+            <div class="news-meta">Локално • 1 мин читање</div>
+            <h3>Акција за чистење во парк</h3>
+            <p>Ученици и волонтери организираа чистење и селекција на отпад…</p>
+            <a class="link" href="news-1.html">Прочитај повеќе →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="80">
+          <img src="assets/img/news2.jpg" alt="Садење дрвја" loading="lazy">
+          <div class="news-body">
+            <div class="news-meta">Едукација • 2 мин</div>
+            <h3>Засадени 100 дрвја</h3>
+            <p>Иницијатива за обновување зелени површини со локални видови…</p>
+            <a class="link" href="news-2.html">Прочитај повеќе →</a>
+          </div>
+        </article>
+
+        <article class="news-card" data-aos="fade-up" data-aos-delay="160">
+          <img src="assets/img/news3.jpg" alt="Чиста вода" loading="lazy">
+          <div class="news-body">
+            <div class="news-meta">Совет • 1 мин</div>
+            <h3>Како да ја чуваме водата?</h3>
+            <p>Мали навики во домаќинството што прават голема разлика…</p>
+            <a class="link" href="news-3.html">Прочитај повеќе →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="center-actions" data-aos="fade-up">
+        <a class="btn btn-primary" href="news.html">Види сите вести</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section class="section" id="calendar">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <h2>Еко календар</h2>
+        <p>Важни еколошки датуми (брз преглед за ученици и активисти).</p>
+      </div>
+
+      <div class="calendar" data-aos="fade-up">
+        <div class="calendar-tools">
+          <div class="pill">📅 Датуми</div>
+          <button class="btn btn-ghost btn-sm" type="button" data-filter="all">Сите</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-filter="spring">Пролет</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-filter="summer">Лето</button>
+          <button class="btn btn-ghost btn-sm" type="button" data-filter="autumn">Есен</button>
+        </div>
+
+        <ul class="calendar-list" data-calendar-list>
+          <li data-season="spring"><strong>21 Март</strong> — Меѓународен ден на шумите</li>
+          <li data-season="spring"><strong>22 Март</strong> — Светски ден на водата</li>
+          <li data-season="spring"><strong>22 Април</strong> — Ден на планетата Земја</li>
+          <li data-season="summer"><strong>5 Јуни</strong> — Светски ден на животната средина</li>
+          <li data-season="summer"><strong>8 Јуни</strong> — Светски ден на океаните</li>
+          <li data-season="autumn"><strong>16 Септември</strong> — Ден за заштита на озонската обвивка</li>
+          <li data-season="autumn"><strong>4 Октомври</strong> — Светски ден на животните</li>
+          <li data-season="autumn"><strong>11 Декември</strong> — Меѓународен ден на планините</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">EcoPatrol</div>
+        <div class="footer-small">© 2026 EcoPatrol — Ученички матурски проект. Сите права задржани.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#top">Горе</a>
+        <a href="report.html">Пријави</a>
+        <a href="news.html">Вести</a>
+        <a href="mailto:eco@school.mk">Контакт</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK REPORT MODAL -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Затвори" data-modal-close>×</button>
+      <h3 id="modalTitle">Брза пријава</h3>
+      <p class="muted">Ова е кратка форма (се чува локално во прелистувачот).</p>
+
+      <form class="form" data-quick-report-form>
+        <label>
+          Тип на проблем
+          <input type="text" name="type" readonly />
+        </label>
+
+        <label>
+          Локација
+          <input type="text" name="location" placeholder="Пример: Аеродром, Скопје" required />
+        </label>
+
+        <label>
+          Опис
+          <textarea name="details" rows="4" placeholder="Краток опис…" required></textarea>
+        </label>
+
+        <label class="inline">
+          <input type="checkbox" name="agree" required />
+          Се согласувам дека информациите се точни.
+        </label>
+
+        <button class="btn btn-primary" type="submit">Зачувај пријава</button>
+        <div class="form-msg" data-form-msg></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 650, once: true });</script>
+</body>
+</html>
