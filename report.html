@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="mk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoPatrol — Пријави проблем</title>
+  <meta name="description" content="Пријави еколошки проблем со EcoPatrol." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">🌿</span>
+        <span class="brand-text">Eco<span>Patrol</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Отвори мени" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" data-nav>
+        <a href="index.html">Почетна</a>
+        <a href="report.html" class="active">Пријави</a>
+        <a href="news.html">Вести</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Пријави еколошки проблем</h1>
+        <p>Формата е наменета за ученички проект. Пријавите се чуваат локално (localStorage).</p>
+      </div>
+
+      <div class="two-col">
+        <!-- FORM -->
+        <section class="panel">
+          <h2 class="panel-title">Форма</h2>
+
+          <form class="form" data-report-form>
+            <label>
+              Тип на проблем
+              <select name="type" required>
+                <option value="" selected disabled>Избери тип</option>
+                <option>Ѓубре / Дива депонија</option>
+                <option>Загадена вода</option>
+                <option>Загаден воздух</option>
+                <option>Пожар / Палење отпад</option>
+                <option>Сеча / Уништување зеленила</option>
+                <option>Загрозени животни</option>
+              </select>
+            </label>
+
+            <label>
+              Локација
+              <input name="location" type="text" placeholder="Пример: Карпош, Скопје" required />
+            </label>
+
+            <label>
+              Датум
+              <input name="date" type="date" required />
+            </label>
+
+            <label>
+              Опис
+              <textarea name="details" rows="5" placeholder="Опиши го проблемот..." required></textarea>
+            </label>
+
+            <label class="inline">
+              <input type="checkbox" name="agree" required />
+              Се согласувам дека информациите се точни.
+            </label>
+
+            <button class="btn btn-primary" type="submit">Испрати пријава</button>
+            <div class="form-msg" data-form-msg></div>
+          </form>
+        </section>
+
+        <!-- LIST -->
+        <section class="panel">
+          <div class="panel-row">
+            <h2 class="panel-title">Мои пријави</h2>
+            <button class="btn btn-ghost btn-sm" type="button" data-clear-reports>Избриши ги сите</button>
+          </div>
+
+          <div class="report-list" data-report-list>
+            <!-- filled by JS -->
+          </div>
+
+          <p class="muted small">
+            *Ова е демо функционалност: пријавите не се праќаат на сервер.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">EcoPatrol</div>
+        <div class="footer-small">© 2026 EcoPatrol — Ученички матурски проект.</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Почетна</a>
+        <a href="news.html">Вести</a>
+        <a href="mailto:eco@school.mk">Контакт</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
